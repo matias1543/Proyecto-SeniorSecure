@@ -9,47 +9,44 @@ h1, h2, h3, h4, h5, h6 {
   font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
 }
 
-nav {
-  border-bottom: 1px solid black;
-  padding: 5px 20px;
+/*----------------------------------Header-------------------------*/
+
+header {
+  display: flex;
+  border-bottom: .6px solid rgba(0, 0, 0, 0.226); /*puse más transparente la linea porque se veia rara solida*/
+  justify-content: space-between; 
+}
+
+#logo {
+  width: 4rem;
+  margin-left: 1rem;
+}
+
+#menu {
   background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
 }
 
 nav ul {
+  display: flex;
+  padding: 0 1rem;
+  align-self: center;
+}
+
+nav li{
   list-style-type: none;
-  margin: 0;
-  padding: 0;
-  text-align: left;
+  margin: 0 1rem;
+  text-align: center;
 }
 
-nav ul li{
-  display: inline-block;
-}
-
-nav ul li:first-child {
-  margin-right: 30px;
-}
-
-nav ul li a {
+nav a {
   text-decoration: none;
   color: white;
-  display: block;
-  font-size: 18px;
-}
-
-.izquierda1 {
-  position: relative;
-  display: inline-block;
-  width: 76%;
+  font-size: 1.3rem;
 }
 
 
-.derecha1 {
-  position: relative;
-  display: inline-block;
-  width: 24%;
-}
-
+/*------------------------------------Body----------------------------*/
 
 .contenedor1 img {
   width: 100%;
