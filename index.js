@@ -27,7 +27,7 @@ app.use(express.static('public'))
 
 //Manejo de direcciones
 app.get('/', function (req, res) {
-    res.render('home')
+    res.render('home', { selected: { home: true }})
 })
 
 app.get('/seguro', function (req, res) {
@@ -50,8 +50,12 @@ app.get('/contacto', function(req, res) {
     res.render('contacto')
 })
 
+app.get('/cotizacion', function(req, res) {
+    res.render('cotizacion')
+})
+
 app.get('/sobrenosotros', function(req, res) {
-    res.render('sobrenosotros')
+    res.render('sobrenosotros', { selected: { sobrenosotros: true }})
 })
 
 app.post('/contacto/submitporpost', function(req, res) {
@@ -69,3 +73,4 @@ app.post('/contacto/submitporpost', function(req, res) {
       Edad: ${edad}
     `)
 })
+

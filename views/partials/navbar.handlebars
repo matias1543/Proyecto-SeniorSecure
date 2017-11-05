@@ -4,8 +4,20 @@
   </div>
   <nav id="menu">
     <ul>   
-      <li><a href="/">Pagina Principal</a></li>
-      <li><a href="/sobrenosotros">Sobre Nosotros</a></li>      
+      <li>
+        {{#if selected.home}}
+          <a href="/" class="selected">Pagina Principal</a>
+        {{else}}
+          <a href="/">Pagina Principal</a>
+        {{/if}}
+      </li>
+      <li>
+        {{#if selected.sobrenosotros}}
+          <a href="/sobrenosotros" class="selected">Sobre Nosotros</a>
+        {{else}}
+          <a href="/sobrenosotros">Sobre Nosotros</a>
+        {{/if}}
+      </li>      
     </ul>
   </nav>
 </header>

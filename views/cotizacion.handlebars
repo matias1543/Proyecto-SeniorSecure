@@ -1,0 +1,32 @@
+<div class="form3">
+  <form action="cotizacion/submitporpost" method="post" class="form-cotizacion">
+    <h2 class="form-cotizacion-titulo">Solicitá una Cotización</h2>
+      <div class="contenedor-inputs">
+        <input type="text" name="nombre" placeholder="Nombre" class="input-48"  required="required">
+        <input type="text" name="apellido" placeholder="Apellido" class="input-48" required="required">
+        <select name="tipoDocumento" class="input-48" style="height: 35px" required="required">
+          <option value="">Tipo de Documento</option>
+          <option value="DNI">DNI</option>
+          <option value="LE">LE</option>
+          <option value="LC">LC</option>
+        </select>
+        <input type="text" name="documento" placeholder="Documento" class="input-48" required="required">
+        <input type="email" name="correo" placeholder="Correo" class="input-100" required="required">
+        <input type="text" name="telefono" placeholder="Telefono y/o Celular" class="input-100" required="required">
+        <h3 style="color: white">Datos del Inmueble</h3>
+        <input type="text" name="domicilio" placeholder="Domicilio" class="input-100" required="required">
+        <input type="text" name="cpProvinciaLocalidad" placeholder="CP / Provincia / Localidad" class="input-100" required="required">
+        <select name="tipovivienda" class="input-100" style="height: 35px" required="required">
+          <option value="">Selecciona el tipo de vivienda</option>
+          <option value="casaPermanente">Casa de ocupación permanente</option>
+          <option value="departamentoPermanente">Departamento de ocupación permanente</option>
+          <option value="countryPermanente">Vivienda en country de ocupación permanente</option>
+          <option value="viviendaTransitoria">Vivienda y/o departamento de ocupación transitoria</option>
+        </select>
+        <h4 style="color: white" class="titulos">¿La vivienda tiene sistema de alarma?</h4>
+        <input type="radio" name="vivienda" class="input-10" value="si"><div style="color: white">Si</div>
+        <input type="radio" name="vivienda" class="input-10" value="no"><div style="color: white">No</div>
+        <button >Enviar</button>
+      </div>
+  </form>
+</div>
